@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Toolbar from "./components/Toolbar/Toolbar"
+import SideDrawer from './components/SideDrawer/SideDrawer'
+import Backdrop from './components/Backdrop/Backdrop'
+import { useState } from 'react';
+ 
 function App() {
+
+  const [isSideDrawerOpen,setIsSideDrawerOpen] = useState(false);
+
+  const drawerToggleButtonHandler = () =>{
+    setIsSideDrawerOpen((!isSideDrawerOpen))
+  }
+
+  const backdropClickHandler = () =>{
+    setIsSideDrawerOpen(false)
+  }
+  let backDrop = null;
+
+  if(isSideDrawerOpen){
+    backDrop = <Backdrop backdropClick={backdropClickHandler} />
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      height: "100%"
+    }} className="App">
+<Toolbar clickHandler={drawerToggleButtonHandler}/>
+<SideDrawer show={isSideDrawerOpen} />
+{backDrop}
+<main style={{marginTop:76}}>
+<p>This is the page context</p>
+</main>
     </div>
   );
 }
