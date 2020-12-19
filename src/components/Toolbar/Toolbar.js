@@ -8,7 +8,7 @@ const toolbar = props => (
         <div className="humbagur-button">
             <Humbuger click={props.clickHandler} />
         </div>
-        <div className="toolbar-logo"><a href="">Logo</a></div>
+        <div className="toolbar-logo"><a href="">Phenius Muthomi</a></div>
         <div className="spacer"/>
         <div className="tolbar-nav-items">
             <ul>

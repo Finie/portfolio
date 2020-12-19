@@ -3,6 +3,13 @@ import Toolbar from "./components/Toolbar/Toolbar"
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop'
 import { useState } from 'react';
+
+
+import Profile from './components/Profile/Profile'
+import Projects from './components/Projects/Project'
+
+import './App'
+import project from './components/Projects/Project';
  
 function App() {
 
@@ -28,8 +35,10 @@ function App() {
 <Toolbar clickHandler={drawerToggleButtonHandler}/>
 <SideDrawer show={isSideDrawerOpen} />
 {backDrop}
-<main style={{marginTop:76}}>
-<p>This is the page context</p>
+<main className="main" style={{marginTop:76, width: "100%"}}>
+  <Profile />
+  <Projects />
+
 </main>
     </div>
   );
