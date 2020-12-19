@@ -2,30 +2,16 @@ import React from 'react'
 
 import './Projects.css'
 
-import fin_image from '../../assets/mobile.jpg'
+import {projectOne} from '../../assets/data/data'
 
 const project = props =>(
 <div className="project-container">
-    Title of project
-    <span>description of project</span>
+    {projectOne.title}
+    <span>{projectOne.description}</span>
     <div className="img-container">
-    <div className="project-images">
-       <img className="project-image" src={fin_image}/>
-    </div>
-    <div className="project-images">
-    </div>
-
-    <div className="project-images">
-    </div>
-
-    <div className="project-images">
-    </div>
-
-    <div className="project-images">
-    </div>
-
-    <div className="project-images">
-    </div>
+    {projectOne.images.map((image)=><div className="project-images">
+          <img className="project-image" alt="alternate 1" src={image.image_url}/></div>)}
+          
     </div>
 </div>
 );

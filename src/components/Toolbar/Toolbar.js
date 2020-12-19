@@ -8,13 +8,14 @@ const toolbar = props => (
         <div className="humbagur-button">
             <Humbuger click={props.clickHandler} />
         </div>
-        <div className="toolbar-logo"><a href="">Phenius Muthomi</a></div>
+        <div className="toolbar-logo"><a href="/">Phenius Muthomi</a></div>
         <div className="spacer"/>
         <div className="tolbar-nav-items">
             <ul>
-                <li><a href="/">Profile</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">About</a></li>
+                <li><a onClick={props.scrollListener("Profile")} href="/">Profile</a></li>
+                <li><a onClick={props.scrollListener("Project")}  href="/">Projects</a></li>
+                <li><a onClick={props.scrollListener("About")}  href="/">About</a></li>
+                <li><a onClick={props.scrollListener("Contact")}  href="/">Contacts</a></li>
             </ul>
         </div>
     </nav>

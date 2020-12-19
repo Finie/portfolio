@@ -7,9 +7,10 @@ import { useState } from 'react';
 
 import Profile from './components/Profile/Profile'
 import Projects from './components/Projects/Project'
+import About from './components/About/About'
+import Footer from './components/Footer/Footer'
 
 import './App'
-import project from './components/Projects/Project';
  
 function App() {
 
@@ -19,6 +20,11 @@ function App() {
     setIsSideDrawerOpen((!isSideDrawerOpen))
   }
 
+
+  const sectionSelected = props=> {
+
+    console.log(props.section)
+  }
   const backdropClickHandler = () =>{
     setIsSideDrawerOpen(false)
   }
@@ -32,14 +38,16 @@ function App() {
     <div style={{
       height: "100%"
     }} className="App">
-<Toolbar clickHandler={drawerToggleButtonHandler}/>
+<Toolbar scrollListener={sectionSelected} clickHandler={drawerToggleButtonHandler}/>
 <SideDrawer show={isSideDrawerOpen} />
 {backDrop}
 <main className="main" style={{marginTop:76, width: "100%"}}>
   <Profile />
   <Projects />
-
+  <About />
+  <Footer/>
 </main>
+
     </div>
   );
 }
