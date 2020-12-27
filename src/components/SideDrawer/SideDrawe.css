@@ -21,7 +21,6 @@
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
 }
 .side-drawer li {
     margin: 0.5rem 0;
@@ -35,6 +34,17 @@
     color: #FF0000;
 }
 
+.profile-image{
+    width: 300px;
+    height: 300px;
+    align-content: center;
+    border-radius: 150px;
+}
+
+.img-holder-div{
+display: flex;
+margin: 1.5rem;
+}
 
 
 @media(min-width: 769px){

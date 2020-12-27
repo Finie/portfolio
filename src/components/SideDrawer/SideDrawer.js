@@ -1,5 +1,7 @@
 import React from 'react'
 import './SideDrawe.css'
+import {} from 'react-router-dom'
+import dev_image from '../../assets/dev_image.jpg'
 
 
 const sideDrawer = props =>{
@@ -12,10 +14,11 @@ const sideDrawer = props =>{
     return(
 
     <nav className={drawersClass}>
+        <div className="img-holder-div">
+          <img className="profile-image" alt="alternative 1" src={dev_image}/>
+        </div>
         <ul>
-            <li><a href="/">Profile</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">About</a></li>
+            <li ><a onClick={props.backdropClick} href="/">Profile</a></li>
         </ul>
     </nav>
 );

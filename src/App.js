@@ -34,21 +34,11 @@ function App() {
     backDrop = <Backdrop backdropClick={backdropClickHandler} />
   }
 
-  // const scrollToProfile = () =>{
-
-  // }
-
-
-  return (
-
-
-    
-    <div style={{
+  return (    <div style={{
       height: "100%"
     }} >
 
 <Router>
-
 <Toolbar scrollListener={sectionSelected} clickHandler={drawerToggleButtonHandler}/>
 <SideDrawer show={isSideDrawerOpen} />
 {backDrop}
