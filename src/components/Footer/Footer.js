@@ -10,7 +10,7 @@ import {
   FaJava,
   FaBuromobelexperte,
 } from "react-icons/fa";
-import { SiMysql, SiDjango } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
 import { MdAndroid } from "react-icons/md";
 
 function Footer() {
@@ -29,19 +29,19 @@ function Footer() {
           <span>
             <div className="techdesc">
               <FaReact size={40} />
+              <p>React native</p>
+            </div>
+          </span>
+          <span>
+            <div className="techdesc">
+              <FaReact size={40} />
               <p>React</p>
             </div>
           </span>
           <span>
             <div className="techdesc">
               <FaNode size={40} />
-              <p>Node</p>
-            </div>
-          </span>
-          <span>
-            <div className="techdesc">
-              <SiDjango size={40} />
-              <p>Django</p>
+              <p>Node js</p>
             </div>
           </span>
 
@@ -74,8 +74,8 @@ function Footer() {
           </div>
           <div className="footer-link-items">
             <h2>Contacts</h2>
-            <a href="/"><FaPhoneAlt /> +254715438186 </a>
-            <a href="/">finiephenius@gmail.com</a>
+            <a href="tel:+254715438186"><FaPhoneAlt /> +254715438186 </a>
+            <a href="mailto:finiephenius@gmail.com">finiephenius@gmail.com</a>
           </div>
         </div>
         <div className="footer-link-wrapper">

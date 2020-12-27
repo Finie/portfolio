@@ -4,13 +4,11 @@ import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop'
 import { useState } from 'react';
 
-
-import Profile from './components/Profile/Profile'
-import Projects from './components/Projects/Project'
-import About from './components/About/About'
-import Footer from './components/Footer/Footer'
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 
 import './App'
+import home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
  
 function App() {
 
@@ -25,6 +23,8 @@ function App() {
 
     console.log(props.section)
   }
+
+  
   const backdropClickHandler = () =>{
     setIsSideDrawerOpen(false)
   }
@@ -34,21 +34,34 @@ function App() {
     backDrop = <Backdrop backdropClick={backdropClickHandler} />
   }
 
+  // const scrollToProfile = () =>{
+
+  // }
+
+
   return (
+
+
+    
     <div style={{
       height: "100%"
-    }} className="App">
+    }} >
+
+<Router>
+
 <Toolbar scrollListener={sectionSelected} clickHandler={drawerToggleButtonHandler}/>
 <SideDrawer show={isSideDrawerOpen} />
 {backDrop}
-<main className="main" style={{marginTop:76, width: "100%"}}>
-  <Profile />
-  <Projects />
-  <About />
-  <Footer/>
-</main>
-
+  <Switch>
+    <Route exact path="/" component={home} />
+  <Route path="/profile" component={home}/>
+  </Switch>
+  <Footer />
+</Router>
     </div>
+
+
+
   );
 }
 

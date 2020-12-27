@@ -33,6 +33,7 @@
 }
 .tolbar-nav-items li{
     padding: 0 0.5rem;
+    cursor: pointer;
 }
 
 .tolbar-nav-items{ 

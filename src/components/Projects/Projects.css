@@ -11,18 +11,25 @@
 
 .project-images{
     margin: 3rem;
-    width: 20rem;
+    width: 15rem;
     height: 30rem;
     border-radius: 1.5rem;
     overflow: hidden;
     position: relative;
     margin-left: 3rem;
-    background: chartreuse;
+    background: #000000;
 }
+
+.project-images:hover{
+    box-shadow: 2px 2px 15px 10px rgb(0,0,0,0.2);
+    transition: box-shadow 0.5s ease-out;
+}
+
 
 .project-image{
     width: 100%;
     height: auto;
+    transition: transform 0.5s ease-out;
 }
 
 .img-container{
@@ -32,4 +39,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     top: 76px;
+}
+
+.project-image:hover{
+    transform: scale(1.02);
 }
