@@ -1,6 +1,6 @@
 import React from 'react'
 import './SideDrawe.css'
-import {} from 'react-router-dom'
+import {Link} from 'react-scroll'
 import dev_image from '../../assets/dev_image.jpg'
 
 
@@ -18,7 +18,49 @@ const sideDrawer = props =>{
           <img className="profile-image" alt="alternative 1" src={dev_image}/>
         </div>
         <ul>
-            <li ><a onClick={props.backdropClick} href="/">Profile</a></li>
+            <li ><Link
+               activeClass="active"
+               spy={true}
+               smooth={true}
+               offset={-70}
+               duration={1000}
+               to='profile'        
+            onClick={props.backdropClick} >Profile</Link></li>
+
+ 
+           <li ><Link
+               activeClass="active"
+               spy={true}
+               smooth={true}
+               offset={-70}
+               duration={1000}
+               to='project'        
+            onClick={props.backdropClick} >Project</Link></li>
+
+
+         <li ><Link
+               activeClass="active"
+               spy={true}
+               smooth={true}
+               offset={-70}
+               duration={1000}
+               to='about'        
+            onClick={props.backdropClick} >About</Link></li>
+
+
+
+           <li ><Link
+               activeClass="active"
+               spy={true}
+               smooth={true}
+               offset={-70}
+               duration={1000}
+               to='contact'        
+            onClick={props.backdropClick} >Contacts</Link></li>
+
+
+
+
         </ul>
     </nav>
 );

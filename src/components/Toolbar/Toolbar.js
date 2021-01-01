@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-scroll'
 import './Toolbar.css';
 import Humbuger from '../SideDrawer/ToggleButton'
 
@@ -15,21 +15,47 @@ const toolbar = props => (
         <div className="spacer"/>
         <div className="tolbar-nav-items">
             <ul>
-                <Link to='/profile'>
+                <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+                to='profile'
+                
+                >
                 <li>Profile</li>
                 </Link>
 
-                {/* <Link to='project'>
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                to='project'>
                 <li>Projects</li>
                 </Link>
 
-                <Link to='/about'>
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  to='about'>
                 <li>About</li>
                 </Link>
 
-                <Link to='/contact'>
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  to='contact'>
                 <li>Contacts</li>
-                </Link> */}
+                </Link>
 
             </ul>
         </div>

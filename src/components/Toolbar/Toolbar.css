@@ -41,14 +41,11 @@
     color: white;
 }
 
-.tolbar-nav-items a{
-    color: white;
-    text-decoration: none;
+.toolbar-nav > .active {
+    border-bottom: 1px solid #FF0000;
 }
-
-.tolbar-nav-items a:hover,
-.tolbar-nav-items a:active{
-    color: #FF0000;
+.toolbar-nav-items {
+    text-decoration: none;
 }
 
 

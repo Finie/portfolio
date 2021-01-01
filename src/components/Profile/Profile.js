@@ -7,7 +7,7 @@ function profile (){
 
 return (
 
-<div className="outer-contaner">
+<div className="outer-contaner" id="profile">
     <div className="left-right-div"/>
     <div className="profile-container">
         <img className="profile-image" alt="alternative 1" src={dev_image}/>

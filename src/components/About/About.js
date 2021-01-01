@@ -11,7 +11,7 @@ import {
 
 const about = props =>(
 
-    <div className="about-container">
+    <div id="about" className="about-container">
         About
 
 <div className="about-card-holder">

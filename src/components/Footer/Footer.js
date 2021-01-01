@@ -15,7 +15,7 @@ import { MdAndroid } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div id="contact" className="footer-container">
       <hr style={{color:"white" ,height: 1, width:"100%"}}/>
       <section className="footer-subscription">
         <h2 className="footer-subscription-heading">Technologies</h2>

@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
     background: #000000;
+    min-height: 100vmin;
 }
 
 .left-right-div{

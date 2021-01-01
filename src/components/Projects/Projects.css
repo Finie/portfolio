@@ -3,6 +3,7 @@
     flex-direction: column;
     margin: 2rem;
     font-size: 2rem;
+    min-height: 100vmin;
 }
 
 .project-container span{

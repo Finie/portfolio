@@ -6,7 +6,7 @@ import './Projects.css'
 
 function project(props){
 
-    return(  <div className="project-container">
+    return(  <div id="project" className="project-container">
     {props.data.title}
     <span>{props.data.description}</span>
       <div className="img-container">
