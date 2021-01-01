@@ -41,7 +41,7 @@
     color: white;
 }
 
-.toolbar-nav > .active {
+.nav-items > .active {
     border-bottom: 1px solid #FF0000;
 }
 .toolbar-nav-items {

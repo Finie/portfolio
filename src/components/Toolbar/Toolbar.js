@@ -14,7 +14,9 @@ const toolbar = props => (
         <div className="toolbar-logo"><a href="/">Phenius Muthomi</a></div>
         <div className="spacer"/>
         <div className="tolbar-nav-items">
-            <ul>
+            <ul className="nav-items">
+               
+            
                 <Link
                 activeClass="active"
                 spy={true}

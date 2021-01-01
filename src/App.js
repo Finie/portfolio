@@ -44,7 +44,6 @@ function App() {
 {backDrop}
   <Switch>
     <Route exact path="/" component={home} />
-  <Route path="/profile" component={home}/>
   </Switch>
   <Footer />
 </Router>
