@@ -1,0 +1,64 @@
+.container {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.animation {
+  height: 4.1rem; /* Match the height of one sliding text block */
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.animation > div {
+  display: flex;
+  flex-direction: column;
+  animation: text-animation 8s infinite;
+}
+
+.animation > div > div {
+  height: 4.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes text-animation {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-4.1rem); /* Slide to the second block */
+  }
+  50% {
+    transform: translateY(-4.1rem);
+  }
+  60% {
+    transform: translateY(-8.18rem); /* Slide to the third block */
+  }
+  80% {
+    transform: translateY(-8.18rem);
+  }
+  90% {
+    transform: translateY(0); /* Reset to the first block */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: none;
+  }
+}

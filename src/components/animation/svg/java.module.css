@@ -1,0 +1,68 @@
+.orangeFill {
+  fill: var(--text-primary);
+}
+
+.blueFill {
+  fill: var(--text-primary);
+}
+
+.svgComponent:hover .orangeFill {
+  fill: #e76f00;
+  transition: fill 0.3s ease-out;
+}
+.svgComponent:hover .blueFill {
+  fill: #5382a1;
+  transition: fill 0.3s ease-out;
+}
+
+.reactIcon {
+  fill: var(--text-primary);
+}
+
+.reactIconSgComponent:hover .reactIcon {
+  fill: #53c1de;
+  transition: fill 0.3s ease-out;
+}
+
+.nextJsComponent {
+  fill: var(--text-primary);
+}
+
+.nextJsComponent:hover {
+  fill: var(--black-on-black-white-on-white);
+  transition: fill 0.3s ease-out;
+}
+
+.endStopColor {
+  stop-color: var(--text-primary);
+}
+
+.startStopColor {
+  stop-color: var(--text-primary);
+}
+
+.swiftSvgComponent:hover .endStopColor {
+  stop-color: #f88a36;
+  transition: fill 0.3s ease-out;
+}
+.swiftSvgComponent:hover .startStopColor {
+  stop-color: #fd2020;
+  transition: fill 0.3s ease-out;
+}
+
+.springBootSvg {
+  fill: var(--text-primary);
+}
+
+.springBootSvg:hover {
+  fill: #6db33f;
+  transition: fill 0.3s ease-out;
+}
+.nodeIconPath {
+  fill: var(--text-primary);
+}
+
+.nodeJsSvgComponent:hover .nodeIconPath {
+  fill: #8cc84b;
+  transition: fill 0.3s ease-out;
+}

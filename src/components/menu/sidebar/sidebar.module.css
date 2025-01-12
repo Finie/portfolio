@@ -1,0 +1,120 @@
+/* Sidebar */
+.sideBarContainer {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 500px;
+  z-index: 8;
+  transform: translateX(-500px); /* Initially hidden */
+  transition: transform 0.3s ease-out;
+}
+
+.openSideBarContainer {
+  transform: translateX(0); /* Slide in the sidebar */
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 8;
+  min-height: 100vh;
+  width: 500px;
+  background-color: var(--background);
+  transform: translateX(-500px); /* Initially hidden */
+  transition: transform 0.3s ease-out;
+}
+
+.openSidebar {
+  transform: translateX(0); /* Slide in the sidebar */
+  background-color: var(--background);
+}
+
+.topContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.medianContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.bottomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1.3em;
+}
+
+.asidebar {
+  font-size: 0.65em;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.navigation {
+  text-align: right;
+  font-weight: bold;
+}
+
+.navigation ul {
+  list-style: none;
+
+  li {
+    position: relative;
+    margin: 3.2em 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0%; /* Start with 0% width */
+      height: 0.2em;
+      /* background: black; */
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(
+        to right,
+        var(--primary),
+        var(--accent-color)
+      );
+      transition: width 300ms ease-out; /* Animate the width */
+    }
+
+    &:hover::after {
+      width: 30%; /* On hover, expand the width to 100% */
+    }
+    &.active::after {
+      width: 100%; /* Expand the line when the item is active */
+    }
+  }
+}
+
+.active {
+  cursor: pointer;
+  position: relative;
+}
+
+.inactive {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.inactive :hover {
+  color: rgba(#fff, 0.75);
+}
+
+@media (max-width: 768px) {
+  .sideBarContainer {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sideBarContainer {
+    width: 250px;
+  }
+}

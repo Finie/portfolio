@@ -1,0 +1,52 @@
+.header span {
+  transition: 0.5s ease-out; /* Smooth animation */
+  display: inline-block;
+  background-color: aqua; 
+  height: 0px; 
+  
+}
+
+.firstText {
+  color: var(--primary);
+}
+
+.header:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+
+.header:hover span:nth-child(1):after {
+  content: " ";
+}
+
+.header:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+
+.header:hover span {
+  color: var(--text-primary);
+  text-shadow: 0 0 2.5px var(--text-primary), 0 0 5px var(--text-primary),
+    0 0 10px var(--text-primary);
+}
+
+.headerNoGlow span {
+  transition: 0.5s ease-out; /* Smooth animation */
+  display: inline-block;
+}
+
+.headerNoGlow:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+
+.headerNoGlow:hover span:nth-child(1):after {
+  content: " ";
+}
+
+.headerNoGlow:hover span:nth-child(2) {
+  margin-left: 15px;
+}
+
+.headerNoGlow:hover span {
+  color: var(--text-primary);
+  text-shadow: 0 0 0px var(--text-primary), 0 0 0.5px var(--text-primary),
+    0 0 2.5px var(--text-primary);
+}

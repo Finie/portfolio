@@ -1,0 +1,165 @@
+.humburgerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--small-space);
+  z-index: 10; /* Ensure top nav is above main layout */
+  width: "100%";
+}
+
+.humburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+.humburger:hover {
+  outline: 2px solid var(--accent-color);
+  border-radius: 2px;
+  transition: 0.1s ease-in-out;
+}
+
+.humburger .bar {
+  position: absolute;
+  border-radius: 9rem;
+}
+
+.humburger .bar1 {
+  top: 20%;
+  left: 6.25%;
+}
+
+.humburger .bar2 {
+  top: 38.83%;
+  right: 6.25%;
+}
+
+.humburger .bar3 {
+  top: 58.92%;
+  right: 6.25%;
+}
+
+/* Open State Animations */
+.barOneOpen {
+  animation: bar1-open 0.3s forwards ease-in-out;
+}
+
+.barTwoOpen {
+  animation: bar2-open 0.3s forwards ease-in-out;
+}
+
+.barThreeOpen {
+  animation: bar3-open 0.3s forwards ease-in-out;
+}
+
+/* Close State Animations */
+.barOneClosed {
+  animation: bar1-close 0.3s forwards ease-in-out;
+}
+.barTwoClosed {
+  animation: bar2-close 0.3s forwards ease-in-out;
+}
+.barThreeClosed {
+  animation: bar3-close 0.3s forwards ease-in-out;
+}
+
+/* Keyframes for Bar Animations */
+@keyframes bar1-open {
+  0% {
+    transform: rotate(0);
+    top: 20%;
+  }
+  50% {
+    transform: rotate(0);
+    top: 38.83%;
+  }
+  100% {
+    transform: rotate(45deg);
+    top: 38.83%;
+  }
+}
+
+@keyframes bar1-close {
+  0% {
+    transform: rotate(45deg);
+    top: 38.83%;
+  }
+  50% {
+    transform: rotate(0);
+    top: 38.83%;
+  }
+  100% {
+    transform: rotate(0);
+    top: 20%;
+  }
+}
+
+@keyframes bar2-open {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes bar2-close {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes bar3-open {
+  0% {
+    top: 52.92%;
+    opacity: 1;
+  }
+  50% {
+    top: 52.92%;
+    opacity: 1;
+  }
+  100% {
+    top: 52.92%;
+    opacity: 0;
+  }
+}
+@keyframes bar3-close {
+  0% {
+    top: 52.92%;
+    opacity: 0;
+  }
+  50% {
+    top: 52.92%;
+    opacity: 1;
+  }
+  100% {
+    top: 52.92%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .humburgerContainer { 
+    padding: 0 1.5em; 
+  }
+}
+
+@media (max-width: 480px) {
+  .humburgerContainer {
+    padding: 0 1.5em;
+  }
+}

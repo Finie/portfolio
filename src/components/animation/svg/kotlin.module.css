@@ -1,0 +1,134 @@
+.stopColorOne {
+  stop-color: var(--text-primary);
+}
+
+.stopColorTwo {
+  stop-color: var(--text-primary);
+}
+
+.stopColorThree {
+  stop-color: var(--text-primary);
+}
+
+.stopColorFour {
+  stop-color: var(--text-primary);
+}
+
+.stopColorFive {
+  stop-color: var(--text-primary);
+}
+
+.stopColorSix {
+  stop-color: var(--text-primary);
+}
+
+.stopColorSeven {
+  stop-color: var(--text-primary);
+}
+
+.stopColorEight {
+  stop-color: var(--text-primary);
+}
+
+.stopColorNine {
+  stop-color: var(--text-primary);
+}
+
+.stopColorTen {
+  stop-color: var(--black-white-transparent);
+}
+
+.stopColorEleven {
+  stop-color: var(--black-white-transparent);
+}
+
+.stopColorTwelve {
+  stop-color: var(--black-white-transparent);
+}
+
+.stopColorThirteen {
+  stop-color: var(--black-white-transparent);
+}
+
+.stopColorFourteen {
+  stop-color: var(--black-white-transparent);
+}
+
+.stopColorFivteen {
+  stop-color: var(--black-white-transparent);
+}
+
+.kotlinSvgComponent:hover .stopColorOne {
+  stop-color: #0095d5;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorTwo {
+  stop-color: #238ad9;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorThree {
+  stop-color: #557bde;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorFour {
+  stop-color: #7472e2;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorFive {
+  stop-color: #806ee3;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorSix {
+  stop-color: #0095d5;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorSeven {
+  stop-color: #3c83dc;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorEight {
+  stop-color: #6d74e1;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorNine {
+  stop-color: #806ee3;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorTen {
+  stop-color: #c757bc;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorEleven {
+  stop-color: #d0609a;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorTwelve {
+  stop-color: #e1725c;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorThirteen {
+  stop-color: #ee7e2f;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorFourteen {
+  stop-color: #f58613;
+  transition: fill 0.3s ease-out;
+}
+
+.kotlinSvgComponent:hover .stopColorFivteen {
+  stop-color: #f88909;
+  transition: fill 0.3s ease-out;
+}

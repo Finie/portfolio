@@ -1,0 +1,88 @@
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  padding: 3em;
+}
+
+.leftDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.animatedButtonContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.animatedButtonContainerRight {
+  display: none;
+}
+
+.intoSliding {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.descriptionContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.animationContainer {
+  width: 430px;
+  height: 430px;
+}
+
+.challageBlock {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .homeContainer {
+    padding: 1.5em;
+  }
+  .animationContainer {
+    width: 300px; /* Reduce size for smaller screens */
+    height: 300px;
+  }
+  .animatedButtonContainer {
+    display: none;
+  }
+  .animatedButtonContainerRight {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .animationContainer {
+    width: 200px; /* Further reduce size for very small screens */
+    height: 200px;
+  }
+  .animatedButtonContainer {
+    display: none;
+  }
+  .animatedButtonContainerRight {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+  }
+}
